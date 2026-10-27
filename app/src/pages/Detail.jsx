@@ -16,18 +16,32 @@ export default function Detail() {
     )
   }
 
+  const konfirmasiHapus = () => {
+    if (window.confirm(`Hapus "${item.judul}"?`)) {
+      hapus(item.id)
+      navigate('/koleksi')
+    }
+  }
+
   return (
     <section>
       <h1>{item.judul}</h1>
       <dl>
         <dt>Kategori</dt>
         <dd>{item.kategori}</dd>
-        <dt>Tenggat</dt>
-        <dd>{item.tenggat}</dd>
-        <dt>Prioritas</dt>
-        <dd>{item.prioritas}</dd>
+        <dt>Daerah Asal</dt>
+        <dd>{item.daerahAsal}</dd>
+        <dt>Waktu Masak</dt>
+        <dd>{item.waktuMasak}</dd>
+        <dt>TIngkat Kesulitan</dt>
+        <dd>{item.tingkatKesulitan}</dd>
       </dl>
-      <Link to="/koleksi">Kembali</Link>
+      <div className="aksi">
+        <button type="button" onClick={konfirmasiHapus}>
+          Hapus
+        </button>
+        <Link to="/koleksi">Kembali</Link>
+      </div>
     </section>
   )
 }
