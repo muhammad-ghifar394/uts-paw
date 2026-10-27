@@ -4,7 +4,7 @@
     "judul": "Nasi Liwet",
     "kategori": "Makanan Utama",
     "daerahAsal": "Solo",
-    "waktuMasak": 0,
+    "waktuMasak": 60,
     "tingkatKesulitan": "mudah"
   },
   {
@@ -12,7 +12,7 @@
     "judul": "Nasi Uduk",
     "kategori": "Makanan Utama",
     "daerahAsal": "Jakarta",
-    "waktuMasak": 0,
+    "waktuMasak": 60,
     "tingkatKesulitan": "sedang"
   },
   {
@@ -20,7 +20,7 @@
     "judul": "Nasi Padang",
     "kategori": "Makanan Utama",
     "daerahAsal": "Padang",
-    "waktuMasak": 0,
+    "waktuMasak": 120,
     "tingkatKesulitan": "sulit"
   },
   {
@@ -28,7 +28,7 @@
     "judul": "Sambal Matah",
     "kategori": "Sambal",
     "daerahAsal": "Bali",
-    "waktuMasak": 0,
+    "waktuMasak": 15,
     "tingkatKesulitan": "sedang"
   },
   {
@@ -36,7 +36,7 @@
     "judul": "Sambal Hijau",
     "kategori": "Sambal",
     "daerahAsal": "Padang",
-    "waktuMasak": 0,
+    "waktuMasak": 30,
     "tingkatKesulitan": "mudah"
   },
   {
@@ -44,7 +44,7 @@
     "judul": "Sambal Seruit",
     "kategori": "Sambal",
     "daerahAsal": "Lampung",
-    "waktuMasak": 0,
+    "waktuMasak": 35,
     "tingkatKesulitan": "sulit"
   },
   {
@@ -52,7 +52,7 @@
     "judul": "Wedang Uwuh",
     "kategori": "Minuman",
     "daerahAsal": "Imogiri",
-    "waktuMasak": 0,
+    "waktuMasak": 20,
     "tingkatKesulitan": "sulit"
   },
   {
@@ -60,7 +60,7 @@
     "judul": "Es Dawet Ayu",
     "kategori": "Minuman",
     "daerahAsal": "Barjarnegara",
-    "waktuMasak": 0,
+    "waktuMasak": 45,
     "tingkatKesulitan": "sedang"
   },
   {
@@ -68,7 +68,7 @@
     "judul": "Wedang Jahe",
     "kategori": "Minuman",
     "daerahAsal": "Yogyakarta",
-    "waktuMasak": 0,
+    "waktuMasak": 15,
     "tingkatKesulitan": "mudah"
   },
   {
@@ -76,7 +76,7 @@
     "judul": "Gethuk",
     "kategori": "Kudapan",
     "daerahAsal": "Magelang",
-    "waktuMasak": 0,
+    "waktuMasak": 45,
     "tingkatKesulitan": "sedang"
   }
 ]
