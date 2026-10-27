@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 import './Tambah.css'
 
-const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
+const AWAL = { judul: '', kategori: 'Makanan Utama', tenggat: '', prioritas: 'sedang' }
 
 export default function Tambah() {
   const { tambah } = useKoleksi()
@@ -16,7 +16,7 @@ export default function Tambah() {
   const simpan = (e) => {
     e.preventDefault()
     if (form.judul.trim().length < 3) {
-      setGalat('Judul wajib diisi, minimal 3 karakter.')
+      setGalat('Nama masakan wajib diisi, minimal 3 karakter.')
       return
     }
     tambah({ ...form, judul: form.judul.trim() })
@@ -25,22 +25,24 @@ export default function Tambah() {
 
   return (
     <form className="formulir" onSubmit={simpan} noValidate>
-      <h1>Tambah Tugas</h1>
+      <h1>Tambah Resep</h1>
 
-      <label htmlFor="judul">Judul</label>
+      <label htmlFor="judul">Nama Masakan</label>
       <input id="judul" name="judul" value={form.judul} onChange={ubah} />
       {galat && <p role="alert">{galat}</p>}
 
       <label htmlFor="kategori">Kategori</label>
       <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Kuliah</option>
-        <option>Organisasi</option>
+        <option>Makanan Utama</option>
+        <option>Minuman</option>
+        <option>Kudapan</option>
+        <option>Sambal</option>
       </select>
 
-      <label htmlFor="tenggat">Tenggat</label>
-      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+      <label htmlFor="tenggat">Waktu Memasak</label>
+      <input id="tenggat" name="tenggat" type="number" value={form.tenggat} onChange={ubah} />
 
-      <label htmlFor="prioritas">Prioritas</label>
+      <label htmlFor="prioritas">Kesulitan</label>
       <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
         <option value="rendah">Rendah</option>
         <option value="sedang">Sedang</option>
