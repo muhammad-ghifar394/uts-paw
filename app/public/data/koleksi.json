@@ -1,10 +1,82 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Nasi Liwet",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Solo",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "2",
+    "judul": "Nasi Uduk",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Jakarta",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "3",
+    "judul": "Nasi Padang",
+    "kategori": "Makanan Utama",
+    "daerahAsal": "Padang",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": "4",
+    "judul": "Sambal Matah",
+    "kategori": "Sambal",
+    "daerahAsal": "Bali",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "5",
+    "judul": "Sambal Hijau",
+    "kategori": "Sambal",
+    "daerahAsal": "Padang",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "6",
+    "judul": "Sambal Seruit",
+    "kategori": "Sambal",
+    "daerahAsal": "Lampung",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": "7",
+    "judul": "Wedang Uwuh",
+    "kategori": "Minuman",
+    "daerahAsal": "Imogiri",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sulit"
+  },
+  {
+    "id": "8",
+    "judul": "Es Dawet Ayu",
+    "kategori": "Minuman",
+    "daerahAsal": "Barjarnegara",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sedang"
+  },
+  {
+    "id": "9",
+    "judul": "Wedang Jahe",
+    "kategori": "Minuman",
+    "daerahAsal": "Yogyakarta",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "mudah"
+  },
+  {
+    "id": "10",
+    "judul": "Gethuk",
+    "kategori": "Kudapan",
+    "daerahAsal": "Magelang",
+    "waktuMasak": 0,
+    "tingkatKesulitan": "sedang"
   }
 ]
