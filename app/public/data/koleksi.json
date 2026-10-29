@@ -1,7 +1,7 @@
 [
   {
     "id": "1",
-    "judul": "Nasi Liwet",
+    "nama": "Nasi Liwet",
     "kategori": "Makanan Utama",
     "daerahAsal": "Solo",
     "waktuMasak": 60,
@@ -9,7 +9,7 @@
   },
   {
     "id": "2",
-    "judul": "Nasi Uduk",
+    "nama": "Nasi Uduk",
     "kategori": "Makanan Utama",
     "daerahAsal": "Jakarta",
     "waktuMasak": 60,
@@ -17,7 +17,7 @@
   },
   {
     "id": "3",
-    "judul": "Nasi Padang",
+    "nama": "Nasi Padang",
     "kategori": "Makanan Utama",
     "daerahAsal": "Padang",
     "waktuMasak": 120,
@@ -25,7 +25,7 @@
   },
   {
     "id": "4",
-    "judul": "Sambal Matah",
+    "nama": "Sambal Matah",
     "kategori": "Sambal",
     "daerahAsal": "Bali",
     "waktuMasak": 15,
@@ -33,7 +33,7 @@
   },
   {
     "id": "5",
-    "judul": "Sambal Hijau",
+    "nama": "Sambal Hijau",
     "kategori": "Sambal",
     "daerahAsal": "Padang",
     "waktuMasak": 30,
@@ -41,7 +41,7 @@
   },
   {
     "id": "6",
-    "judul": "Sambal Seruit",
+    "nama": "Sambal Seruit",
     "kategori": "Sambal",
     "daerahAsal": "Lampung",
     "waktuMasak": 35,
@@ -49,7 +49,7 @@
   },
   {
     "id": "7",
-    "judul": "Wedang Uwuh",
+    "nama": "Wedang Uwuh",
     "kategori": "Minuman",
     "daerahAsal": "Imogiri",
     "waktuMasak": 20,
@@ -57,7 +57,7 @@
   },
   {
     "id": "8",
-    "judul": "Es Dawet Ayu",
+    "nama": "Es Dawet Ayu",
     "kategori": "Minuman",
     "daerahAsal": "Barjarnegara",
     "waktuMasak": 45,
@@ -65,7 +65,7 @@
   },
   {
     "id": "9",
-    "judul": "Wedang Jahe",
+    "nama": "Wedang Jahe",
     "kategori": "Minuman",
     "daerahAsal": "Yogyakarta",
     "waktuMasak": 15,
@@ -73,7 +73,7 @@
   },
   {
     "id": "10",
-    "judul": "Gethuk",
+    "nama": "Gethuk",
     "kategori": "Kudapan",
     "daerahAsal": "Magelang",
     "waktuMasak": 45,
