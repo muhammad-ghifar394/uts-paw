@@ -19,7 +19,7 @@ export default function Tentang() {
         <dd>{tema}</dd>
       </dl>
       <p>
-        Kode sumber: <a href={REPO}>{REPO}</a>
+        Kode sumber: <a className="link" href={REPO}>{REPO}</a>
       </p>
     </section>
   )

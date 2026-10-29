@@ -6,6 +6,7 @@ export default function KotakPencarian({ nilai, onUbah }) {
       aria-label="Cari judul"
       value={nilai}
       onChange={(e) => onUbah(e.target.value)}
+      id="kotak-pencarian"
     />
   )
 }

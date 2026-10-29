@@ -13,7 +13,7 @@ export default function Layout() {
   return (
     <div className="kerangka">
       <header className="kepala">
-        <strong id="judul" >Daftar Resep Makanan Nusantara</strong>
+        <strong id="judul-header" >Daftar Resep Makanan Nusantara</strong>
         <nav className="menu">
           {MENU.map(({ ke, label }) => (
             <NavLink className="link" key={ke} to={ke} end={ke === '/'}>
