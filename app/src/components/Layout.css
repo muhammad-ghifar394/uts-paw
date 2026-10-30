@@ -136,3 +136,22 @@
     grid-template-columns: 1fr;
   }
 }
+
+.tombol {
+  padding: 10px;
+  background-color: white;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+.tombol:hover {
+  padding: 8px;
+  background-color: white;
+  border: 4px black solid;
+  border-radius: 10px;
+}
+
+button>a {
+  text-decoration: none;
+  color: black;
+}

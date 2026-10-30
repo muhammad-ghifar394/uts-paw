@@ -38,10 +38,12 @@ export default function Detail() {
         <dd>{item.tingkatKesulitan}</dd>
       </dl>
       <div className="aksi">
-        <button type="button" onClick={konfirmasiHapus}>
+        <button className="tombol" type="button" onClick={konfirmasiHapus}>
           Hapus
         </button>
-        <Link to="/koleksi">Kembali</Link>
+        <button className="tombol" type="button">
+          <Link to="/koleksi">Kembali</Link>
+        </button>
       </div>
     </section>
   )
