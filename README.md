@@ -77,6 +77,8 @@ Deployment: https://muhammad-ghifar394.github.io/uts-paw/
 
 - Menampilkan jumlah resep dan kategori
 - Menampilkan semua resep dalam bentuk kartu
+- Memfilter resep yang tampil sesuai kategori
+- Mengurutkan resep yang tampil sesuai abjad (a-z dan z-a)
 - Menampilkan detail setiap resep
 - Menambahkan resep ke koleksi
 - Menghapus resep yang ada di koleksi
