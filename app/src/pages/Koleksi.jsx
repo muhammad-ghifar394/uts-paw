@@ -2,21 +2,33 @@ import { useState } from 'react'
 import useKoleksi from '../hooks/useKoleksi.js'
 import KotakPencarian from '../components/KotakPencarian.jsx'
 import KartuItem from '../components/KartuItem.jsx'
+import SortirKartu from '../components/SortirKartu.jsx'
 
 export default function Koleksi() {
   const { items, loading, error } = useKoleksi()
   const [cari, setCari] = useState('')
   const [kategori, setKategori] = useState('Semua')
+  const [urutan, setUrutan] = useState('default')
 
   if (loading) return <p>Memuat data...</p>
   if (error) return <p role="alert">Gagal memuat: {error}</p>
 
   const daftarKategori = ['Semua', ...new Set(items.map((item) => item.kategori))]
-  const tampil = items.filter(
+  const tampil = items
+  .filter(
     (item) =>
       item.judul.toLowerCase().includes(cari.toLowerCase()) &&
       (kategori === 'Semua' || item.kategori === kategori),
   )
+  .sort((a, b) => {
+    if (urutan === 'az') {
+      return a.judul.localeCompare(b.judul, 'id')
+    }
+    if (urutan === 'za') {
+      return b.judul.localeCompare(a.judul, 'id')
+    }
+    return 0
+  })
 
   return (
     <section>
@@ -28,6 +40,7 @@ export default function Koleksi() {
             <option key={k}>{k}</option>
           ))}
         </select>
+        <SortirKartu nilai={urutan} onUbah={setUrutan} />
       </div>
       {tampil.length === 0 ? (
         <p>Tidak ada item yang cocok.</p>
