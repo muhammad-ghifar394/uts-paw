@@ -62,7 +62,7 @@ Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi me
 
 Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
 
-```markdown
+
 # Nama Aplikasi
 
 Nama: Muhammad Ghifar
@@ -75,7 +75,13 @@ Deployment: https://muhammad-ghifar394.github.io/uts-paw/
 
 ## Fitur
 
-- ...
+- Menampilkan jumlah resep dan kategori
+- Menampilkan semua resep dalam bentuk kartu
+- Menampilkan detail setiap resep
+- Menambahkan resep ke koleksi
+- Menghapus resep yang ada di koleksi
+- Menampilkan statistik jumlah resep makanan per kategori
+- Menampilkan identitas mahasiswa pembuat program beserta kode sumbernya di github
 
 ## Menjalankan secara lokal
 
@@ -85,5 +91,15 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+- Components: blok pembangun utama aplikasi react yang membagi UI menjadi bagian-bagian independen dan reusable (contoh: Layout di Layout.jsx)
+- Props: cara untuk meneruskan data dari parent component ke child component (contoh: daftarKategori di tag FilterKategori di Koleksi.jsx baris ke-39)
+- State: data yang dikelola secara internal oleh components (contoh: variabel cari di Koleksi.jsx baris ke-10)
+- Hooks: fungsi yang memungkinkan penggunaan state dan fitur react melalui komponen (contoh: useState di Koleksi.jsx baris ke-10)
+- Hooks-useState: hook untuk menambahkan state React ke komponen fungsional (contoh: useState di Koleksi.jsx baris ke-10)
+- Hooks-useEffect: hook untuk melakukan side-effects dalam komponen fungsional (contoh: useEffect di KoleksiProvider.jsx baris ke 10)
+- Custom Hooks: hook yang dibuat sendiri dengan tujuan tertentu (contoh: useKoleksi.js dan useLocalStorage.js di folder hooks)
+- Custom Hooks-useKoleksi: custom hook untuk membuat context khusus koleksi agar komponen lain bisa menggunakan KoleksiContext dengan mudah
+- Custom Hooks-useLocalStorage: custom hook untuk menggunakan local storage agar koleksi dapat tersimpan di penyimpanan lokal browser dan tetap ada walaupun page di refresh
+- React Router: mekanisme yang memungkinkan pergantian halaman secara instan tanpa perlu meminta file HTML baru ke server (contoh: Route dan Routes di App.jsx baris ke-1)
+- Context API: fitur bawaan react yang digunakan untuk berbagi data antar-komponen tanpa harus mengirimkan props secara berantai (props drilling) (contoh: folder context yang berisi koleksiContext dan koleksiProvider)
+- Provider: menyediakan data dan fungsi kepada komponen-komponen yang berada di dalamnya (contoh: tag KoleksiProvider di App.jsx baris ke 14)
