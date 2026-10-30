@@ -4,9 +4,9 @@ export default function KotakPencarian({ nilai, onUbah }) {
       type="search"
       placeholder="Cari judul..."
       aria-label="Cari judul"
+      id="kotak-pencarian"
       value={nilai}
       onChange={(e) => onUbah(e.target.value)}
-      id="kotak-pencarian"
     />
   )
 }

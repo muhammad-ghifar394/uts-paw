@@ -2,12 +2,13 @@ import { useState } from 'react'
 import useKoleksi from '../hooks/useKoleksi.js'
 import KotakPencarian from '../components/KotakPencarian.jsx'
 import KartuItem from '../components/KartuItem.jsx'
-import SortirKartu from '../components/SortirKartu.jsx'
+import SortirKartu from '../components/SortingKartu.jsx'
+import FilterKategori from '../components/FilterKategori.jsx'
 
 export default function Koleksi() {
   const { items, loading, error } = useKoleksi()
   const [cari, setCari] = useState('')
-  const [kategori, setKategori] = useState('Semua')
+  const [filter, setFilter] = useState('Semua')
   const [urutan, setUrutan] = useState('default')
 
   if (loading) return <p>Memuat data...</p>
@@ -18,7 +19,7 @@ export default function Koleksi() {
   .filter(
     (item) =>
       item.judul.toLowerCase().includes(cari.toLowerCase()) &&
-      (kategori === 'Semua' || item.kategori === kategori),
+      (filter === 'Semua' || item.kategori === kategori),
   )
   .sort((a, b) => {
     if (urutan === 'az') {
@@ -35,11 +36,7 @@ export default function Koleksi() {
       <h1>Koleksi</h1>
       <div className="alat-koleksi">
         <KotakPencarian nilai={cari} onUbah={setCari} />
-        <select id="kotak-filter" aria-label="Kategori" value={kategori} onChange={(e) => setKategori(e.target.value)}>
-          {daftarKategori.map((k) => (
-            <option key={k}>{k}</option>
-          ))}
-        </select>
+        <FilterKategori daftarKategori={daftarKategori} nilai={filter} onUbah={setFilter} />
         <SortirKartu nilai={urutan} onUbah={setUrutan} />
       </div>
       {tampil.length === 0 ? (

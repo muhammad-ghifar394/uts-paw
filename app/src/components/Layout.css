@@ -100,7 +100,7 @@
   color: black;
 }
 
-#judul-header, #kotak-pencarian, #kotak-filter {
+#judul-header, #kotak-pencarian, #kotak-filter, #kotak-sorting {
   padding: 10px;
   border: 2px solid black;
   border-radius: 10px;
