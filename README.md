@@ -65,11 +65,11 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 
 # Nama Aplikasi
 
-Nama: Muhammad Ghifar
-NIM: 124140091
-Kelas: RA
-Tema: Resep Masakan Nusantara
-Deployment: https://muhammad-ghifar394.github.io/uts-paw/ 
+Nama: Muhammad Ghifar  
+NIM: 124140091  
+Kelas: RA  
+Tema: Resep Masakan Nusantara  
+Deployment: https://muhammad-ghifar394.github.io/uts-paw/  
 
 ![Tangkapan layar beranda](docs/beranda.png)
 
@@ -85,9 +85,9 @@ Deployment: https://muhammad-ghifar394.github.io/uts-paw/
 
 ## Menjalankan secara lokal
 
-cd app
-npm install
-npm run dev
+cd app  
+npm install  
+npm run dev  
 
 ## Konsep React yang dipakai
 
