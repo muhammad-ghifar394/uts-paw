@@ -58,11 +58,6 @@ Panduan lengkap beserta solusi kendala umum ada di halaman [Panduan](https://uts
 
 Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi mengubahnya di fork tidak berpengaruh.
 
-## README milikmu
-
-Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
-
-
 # Nama Aplikasi
 
 Nama: Muhammad Ghifar  
