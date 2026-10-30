@@ -5,7 +5,7 @@ export default function KartuItem({ item }) {
   return (
     <article className="kartu">
       <h3>
-        <Link to={`/koleksi/${id}`}>{judul}</Link>
+        <Link className="judul-kartu" to={`/koleksi/${id}`}>{judul}</Link>
       </h3>
       <p>
         {kategori} · waktu masak {waktuMasak} menit

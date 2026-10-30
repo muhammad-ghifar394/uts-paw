@@ -100,6 +100,13 @@
   color: black;
 }
 
+.judul-kartu:link,
+.judul-kartu:active,
+.judul-kartu:hover,
+.judul-kartu:visited {
+  color: black;
+}
+
 #judul-header, #kotak-pencarian, #kotak-filter, #kotak-sorting {
   padding: 10px;
   border: 2px solid black;
